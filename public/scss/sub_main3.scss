@@ -1,0 +1,322 @@
+#wrap {
+    width: 100%;
+    #main.main3 {
+        width: 100%;
+        #section1 {
+            width: 100%;
+            padding: 0 0 50px 0;
+            .container {
+                width: 100%;
+                max-width: 1064px;
+                margin: 0 auto;
+                .gap {
+                    margin: 0 7px;
+                    .content {
+                        width: 100%;
+                        a {
+                            display: block;
+                            width: 100%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #section2 {
+            width: 100%;
+            padding: 0 0 100px 0;
+            .container {
+                width: 100%;
+                max-width: 1064px;
+                margin: 0 auto;
+                .gap {
+                    width: 100%;
+                    margin: 0;
+                    .title {
+                        width: 100%;
+                        padding: 0 7px 50px 7px;
+                        text-align: center;
+                        h2 {
+                            font-size: 28px;
+                            font-weight: 500;
+                            color: #333;
+                        }
+                    }
+                    .content {
+                        width: 100%;
+                        display: flex;
+                        .left {
+                            position: sticky;
+                            top: 70px;
+                            left: 0;
+                            width: 220px;
+                            height: 100vh;
+                            margin: 0 46px 0 0;
+                            .title-filter {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin: 0 7px;
+                                width: auto;
+                                height: 40px;
+                                span {
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    color: #333;
+                                    &:last-child {
+                                        font-size: 14px;
+                                        color: #ddd;
+                                    }
+                                    svg {
+                                        margin: -2px 4px 0 0;
+                                    }
+                                }
+                            }
+                            .col-gap {
+                                margin: 0 7px;
+                                height: 100%;
+                                .wrap {
+                                    width: 100%;
+                                    height: 100%;
+                                    overflow-y: auto;
+                                    &::-webkit-scrollbar {
+                                        width: 0;
+                                    }
+                                    > ul {
+                                        width: 100%;
+                                        > li {
+                                            width: 100%;
+                                            border-bottom: 1px solid #eee;
+                                            &:first-child {
+                                                border-top: 1px solid #eee;
+                                            }
+                                            > a {
+                                                display: flex;
+                                                justify-content: space-between;
+                                                align-items: center;
+                                                width: 100%;
+                                                height: 52px;
+                                                color: #333;
+                                                > svg {
+                                                    width: 18px;
+                                                    height: 18px;
+                                                    transform: rotate(180deg);
+                                                    transition: all 0.3s;
+                                                }
+
+                                                &.on {
+                                                    svg {
+                                                        transform: rotate(0deg);
+                                                    }
+                                                }
+                                            }
+                                            
+                                            .category-sub {
+                                                width: 100%;
+                                                .category-sub-order {
+                                                    padding-bottom: 15px;
+                                                    a {
+                                                        font-size: 14px;
+                                                        color: #333;
+                                                        &:first-child {
+                                                            color: #5f0080;
+                                                            font-weight: 500;
+                                                        }
+                                                    }
+                                                    i {
+                                                        color: #eee;
+                                                        margin: 0 10px;
+                                                    }
+                                                }
+                                                ul {
+                                                    width: 100%;
+                                                    li {
+                                                        width: 100%;
+                                                        padding: 10px 0;
+                                                        label {
+                                                            font-size: 14px;
+                                                            color: #333;
+                                                            user-select: none;
+                                                            cursor: pointer;
+                                                            transition: all 0.3s;
+
+                                                            &:hover {
+                                                                color: #5f0080;
+                                                            }
+                                                            input {
+                                                                appearance: none;
+                                                                &:checked {
+                                                                    ~svg {
+                                                                        fill: rgba(95, 0, 128,0.9);
+                                                                    }
+                                                                }
+                                                            }
+                                                            svg {
+                                                                width: 18px;
+                                                                height: 18px;
+                                                                margin: -2px 7px 0 0;
+                                                                vertical-align: middle;
+                                                                fill: none;
+                                                                path {
+                                                                    stroke: #ddd;
+                                                                }
+                                                            }
+                                                        }
+                                                        button {
+                                                            width: 100%;
+                                                            height: 30px;
+                                                            text-align: center;
+                                                            border: none;
+                                                            outline: none;
+                                                            background: none;
+                                                            font-size: 12px;
+                                                            font-weight: 500;
+                                                            color: #999;
+                                                            cursor: pointer;
+                                                            transition: all 0.3s;
+                                                            &:hover {
+                                                                color: rgb(51,51,51);
+                                                            }
+                                                            svg {
+                                                                margin: -2px 0 0 0;
+                                                                transform: rotate(90deg);
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .right {
+                            width: 266px * 3;
+                            .order-filter {
+                                margin: 0 7px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                width: auto;
+                                height: 40px;
+                                span {
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    color: #333;
+                                }
+                                .order-menu {
+                                    a {
+                                        font-size: 14px;
+                                        color: #999;
+                                        &:nth-child(2) {
+                                            color: rgb(51,51,51);
+                                        }
+                                        svg {
+                                            margin: -2px 0 0 4px;
+                                        }
+                                    }
+                                    i {
+                                        color: #eee;
+                                        margin: 0 3px;
+                                    }
+                                }
+                            }
+                            ul {
+                                width: 100%;
+                                display: flex;
+                                flex-flow: row wrap;
+                                li {
+                                    width: 266px;
+                                    .col-gap {
+                                        margin: 0 7px 14px 7px;
+                                        .wrap {
+                                            width: 100%;
+                                            cursor: pointer;
+                                            .img-box {
+                                                width: 100%;
+                                                position: relative;
+                                                overflow: hidden;
+                                                > img {
+                                                    width: 100%;
+                                                    position: relative;
+                                                    z-index: 1;
+                                                    transition: all 0.6s ease-in-out;
+                                                    &:hover {
+                                                        transform: scale(1.06);
+                                                    }
+                                                }
+                                                a {
+                                                    position: absolute;
+                                                    right: 16px;
+                                                    bottom: 16px;
+                                                    z-index: 2;
+                                                    width: 45px;
+                                                    height: 45px;
+                                                    img {
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+                                            .caption {
+                                                padding: 15px 0 30px 0;
+                                                h6 {
+                                                    font-size: 14px;
+                                                    color: #999;
+                                                    padding-bottom: 10px;
+                                                }
+                                                h2 {
+                                                    font-size: 16px;
+                                                    color: #333;
+                                                    line-height: 24px;
+                                                    margin-bottom: 8px;
+                                                    strong {
+                                                        font-weight: 400;
+                                                    }
+                                                }
+                                                h3 {
+                                                    & strong {
+                                                        font-size: 16px;
+                                                        font-weight: 800;
+                                                        line-height: 24px;
+                                                        margin: 0 7px 10px 0;
+                                                        color: #fa622f;
+                                                    }
+                                                    & em {
+                                                        font-size: 16px;
+                                                        font-weight: 800;
+                                                        color: #333;
+                                                    }
+                                                    & s {
+                                                        font-size: 14px;
+                                                        line-height: 20px;
+                                                        color: #b5b5b5;
+                                                    }
+                                                }
+                                                h5 {
+                                                    font-size: 12px;
+                                                    color: #999;
+                                                    padding: 20px 0 15px 0;
+                                                }
+                                                h4 {
+                                                    display: inline-block;
+                                                    font-size: 12px;
+                                                    font-weight: 500;
+                                                    color: #5f0080;
+                                                    background-color: #f4f4f4;
+                                                    border-radius: 4px;
+                                                    padding: 2px 8px 4px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
